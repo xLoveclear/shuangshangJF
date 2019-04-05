@@ -1,0 +1,117 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+	background-color:#EFEFEF !important;
+	}
+.back{
+	background-color:#F86941;
+}
+.wid{
+	padding:10px 0px;
+	}
+.img1 img{
+	height:2.8rem;
+}
+.img2 img{
+	height:2.4rem;
+	margin-top:10%;
+	margin-left:70%;
+}
+.zi{
+	text-align:center;
+	font-weight: 600;
+	font-size: 1.6rem;
+	color:white;
+	line-height: 28px;
+}
+/*---------以上是公用的模块--------------------*/
+.top{
+	margin-top:14px;
+	}
+.zuoyou{
+	background-color:white;
+	margin-bottom:10px;
+	padding-top:10px;
+	padding-bottom:10px;
+	}
+.img img{
+	width:100%;
+	height:8rem;
+	overflow:hidden;
+	}
+.font{
+	font-size:12px;
+	font-weight:800;
+	margin-bottom:6px;
+	}
+.font1{
+	font-size:10px;
+	color:#939393;
+	margin-bottom:2px;
+	}
+.font2{
+	font-size:12px;
+	font-weight:600;
+	white-space:nowrap;
+	overflow:hidden;
+	}
+.xin{
+	text-align:center;
+	color:#939393;
+	height: 90px;
+	}
+.xin1 img{
+	height:3.6rem !important;
+	}
+.xin img{
+	height:4.8rem;
+	margin-top:16px;
+	margin-left:4px;
+	margin-right:4px;
+	margin-bottom:6px;
+	}
+.pjj{
+	background-color:white;
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:10px;
+	}
+.pj span{
+	display:inline-block;
+	text-align:center;
+	color:#F86941;
+	border:1px solid #F86941;
+	padding: 8px 8px;
+	border-radius: 10px;
+	margin: 6px 0px;
+	font-size: 1rem;
+	}
+.pj1{
+	color:white !important;
+	background-color:#F86941;
+	}
+.write{
+	background-color:white;
+	margin-top:10px;
+	text-align:center;
+	padding-top:10px;
+	}
+.bot textarea{
+	border:1px solid #979797;
+	border-radius:5px;
+	width:90%;
+	height:100px;
+	padding-left:10px;
+	padding-top:6px;
+	}
+.bot input{
+	border:1px solid #F86941;
+	border-radius:5px;
+	width:40%;
+	line-height:24px;
+	background-color:#F86941;
+	color:white;
+	margin-top:20px;
+	margin-bottom:30px;
+	}
+	

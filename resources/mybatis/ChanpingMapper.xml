@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.repository.ChanpingDao">
+		<resultMap id="yh" type="BaseChanping"></resultMap>
+		
+		<insert id="insert" parameterType="BaseChanping">
+    	INSERT INTO chanping (id,tupian,title,shixian,jianjie,tiaojian,liucheng,jine,aboutwomen,lxwomen,cpstatic,faburen,fabutime) VALUE
+(#{id},#{tupian},#{title},#{shixian},#{jianjie},#{tiaojian},#{liucheng},#{jine},#{aboutwomen},#{lxwomen},#{cpstatic},#{faburen},#{fabutime})
+    </insert>
+    	
+	 	<select id="findByPage"  resultMap="yh" parameterType="BaseChanping">
+        	SELECT id,tupian,title,shixian,jianjie,tiaojian,jine,aboutwomen,lxwomen,cpstatic,shcishu,faburen,fabutime
+			FROM Chanping WHERE cpstatic='1'
+			ORDER BY id ASC    
+   	    </select> 
+   	    <select id="findPage"  resultMap="yh" parameterType="BaseChanping">
+        	SELECT id,tupian,title,shixian,jianjie,tiaojian,jine,aboutwomen,lxwomen,cpstatic,shcishu,bohuiyy,faburen,fabutime
+			FROM Chanping WHERE cpstatic='0'
+			ORDER BY id ASC    
+   	    </select> 
+   	    <delete id="delete" parameterType="BaseChanping">
+   	    	DELETE FROM Chanping WHERE id=#{id};
+   	    </delete>
+   	 	<select id="find" resultMap="yh" resultType="BaseChanping">
+       		SELECT t.* FROM chanping t   WHERE id=#{id}; 
+   	    </select>
+   	    <select id="findALL" resultMap="yh" resultType="BaseChanping">
+       		SELECT t.* FROM `user` t   WHERE 1=1; 
+   	    </select>
+   	    <select id="findlogin" resultMap="yh" resultType="BaseChanping">
+       		SELECT t.* FROM `user` t   WHERE id=#{id} AND phone=#{phone}; 
+   	    </select>
+   	    <update id="update" parameterType="BaseChanping">
+   	    	UPDATE chanping SET tupian=#{tupian},title=#{title},shixian=#{shixian},jianjie=#{jianjie},tiaojian=#{tiaojian},
+lxwomen=#{lxwomen},lxwomen=#{lxwomen},cpstatic=#{cpstatic},shcishu=#{shcishu},
+shtime=#{shtime},bohuiyy=#{bohuiyy},faburen=#{faburen}
+WHERE id=#{id}
+   	    </update>
+   	    
+   	    <delete id="deleteBatch" parameterType="java.util.List">
+   	    	DELETE FROM chanping WHERE id
+	   	    	in(
+			<foreach item="item" collection="list" open="" separator="," close="" >
+				#{item.id}
+			</foreach>
+			);
+   	    </delete>
+   	   	
+    	
+</mapper>

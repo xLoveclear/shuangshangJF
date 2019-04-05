@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.repository.XinwenlmDao">
+		<resultMap id="yh" type="BaseXinwenlm"></resultMap>
+		
+		<insert id="insert" parameterType="BaseXinwenlm">
+    		INSERT INTO xinwenlm (id,lmname,cjtime,lmfm,url) VALUE
+(#{id},#{lmname},#{cjtime},#{lmfm},#{url});
+    	</insert>
+    	
+	 	<select id="findByPage"  resultMap="yh" parameterType="BaseXinwenlm">
+        	SELECT id,lmname,cjtime,lmfm,url FROM xinwenlm ORDER BY id ASC  
+        	
+   	    </select> 
+   	    <delete id="delete" parameterType="BaseXinwenlm">
+   	    	DELETE FROM xinwenlm WHERE id=#{id};
+   	    </delete>
+   	 	<select id="find" resultMap="yh" resultType="BaseXinwenlm">
+       		SELECT t.* FROM xinwenlm t   WHERE id=#{id} ; 
+   	    </select>
+   	    <select id="findALL" resultMap="yh" resultType="BaseXinwenlm">
+       		SELECT id,lmname FROM xinwenlm WHERE 1=1;
+   	    </select>
+   	    <update id="update" parameterType="BaseXinwencx">
+   	    	UPDATE xinwenlm SET lmname=#{lmname},cjtime=#{cjtime},lmfm=#{lmfm},url=#{url}
+WHERE id=#{id};
+   	    </update>
+   	    
+   	    <delete id="deleteBatch" parameterType="java.util.List">
+   	    	DELETE FROM xinwenlm WHERE id
+	   	    	in(
+			<foreach item="item" collection="list" open="" separator="," close="" >
+				#{item.id}
+			</foreach>
+			);
+   	    </delete>
+   	    <!--<select id="count"  resultType="int" parameterType="Student">
+       		SELECT count(*) FROM student t WHERE 1=1 
+    	</select> -->
+    	
+</mapper>

@@ -1,0 +1,173 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-color:#F4F4F4 !important;
+	}
+.bkcolor{
+	background-color:#2065B1;
+	margin:2px auto;
+	}
+.width{
+	color:white;
+	text-align:center;
+	width:33%;
+	}
+.width1{
+	margin-top:8px;
+	position:relative;
+	left:-10%;
+	}
+.width2{
+	position:relative;
+	right:-10%;
+	}
+.center{
+	padding-right: 0px !important;
+	padding-left: 0px !important;
+	}
+.daxiao{
+	height: 16rem !important;
+	width:100%;
+	}
+.float{
+	float:left;
+	width:20%;
+	margin-top: 14px;
+	padding: 0px 18px;
+	}
+.clear{
+	clear:none !important;
+	}
+.float img{
+	height:3rem;
+	}
+.float span{
+	color:#111111;
+	font-size:1.4rem;
+	display:block;
+	margin-right:-40px;
+	margin-left:-10px;
+	}
+.font h3{
+	color:#2066B2;
+	font-weight:800;
+	}
+.san0{
+	background-color:white;
+	}
+.san{
+	margin-top:8px;
+	background-color:white;
+	}
+.sp{
+	margin-top:16px;
+	margin-left:-10px;
+	}
+.span{
+	border:1px solid #F9744F;
+	border-radius:4px;
+	padding:2px 8px;
+	}
+.duijie{
+	margin-top:8px;
+	}
+.towhr span{
+	color:#2066B2;
+	font-size:1.6rem;
+	font-weight:800;
+	}
+.towhr1 p{
+	width:50%;
+	border:1.6px solid #2066B2;
+	position:relative;
+	right: -30px !important;
+	top: 8px;
+	}
+.towhr2 p{
+	width:50%;
+	border:1.6px solid #2066B2;
+	position:relative;
+	left: -34px !important;
+	top: 8px;
+	}
+.list img{
+	height:1.6rem;
+	}
+.bk1{
+	color:white;
+	}
+.xian{
+	width:2px;
+	border:2px solid #2066B2;
+	margin-left:-10px;
+	margin-right:10px;
+	}
+.xian2{
+	width:2px;
+	border:2px solid #F76941;
+	margin-left:-10px;
+	margin-right:10px;
+	}
+.bgtow{
+	background-color:#F76941;
+	width:40% !important;
+	padding-top:10px;
+	}
+.totow{
+	margin-top:8px;
+	}
+.bgtow1{
+	background-color:#2066B2;
+	width:40% !important;
+	padding-top:10px;
+	}
+.list{
+	margin-bottom:10px;
+	}
+.list span{
+	color:white;
+	}
+.litop{
+	margin-top:10px;
+	}
+.list img{
+	margin-right:10px;
+	}
+.libottom{
+	margin-bottom:40px;
+	}
+.huanhang{
+	margin-top:10px;
+	}
+.huan{
+	width:33%;
+	}
+.huan img{
+	height:3rem;	
+	}
+.huan span{
+	position:relative;
+	left:-20px;
+	font-size:1.2rem;
+	}
+.nav-tabs {
+	border:none !important;
+	}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+    color: #555;
+    cursor: default;
+    background-color:#F4F4F4;
+	border-bottom:2px solid #2065B1 !important;
+	border-top:none !important;
+	border-right:none !important;
+	border-left:none !important;
+	color:#2065B1 !important;
+	}
+.bottom{
+	margin-top:20px;
+	margin-bottom:20px;
+	}
+.bot img{
+	width:36%;
+	margin:10px 16px;
+	}

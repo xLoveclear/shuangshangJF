@@ -1,0 +1,130 @@
+/* CSS Document */
+.container{
+	margin:0 !important; 
+	padding:0 !important;
+}
+.row{
+	margin:0 !important;
+}
+.row>div{
+	padding:0 !important;
+}
+.top{
+	padding:0;
+	border-bottom:1px solid #E2E2E2;
+}
+.top .col-xs-4{
+	width:33.333333%;
+	height:4rem;
+	line-height:4rem;
+}
+.top .left{
+	padding-top:1rem !important;
+	padding-left:2rem !important;
+}
+.top .col-xs-4 img{
+	height:18px;
+}
+.top .center{
+	text-align:center;
+	font-size:1.6rem;
+	font-weight:600;
+}
+.top .right{
+	padding-top:0.8rem !important;
+	text-align:right;
+	padding-right:2rem !important;
+}
+#wordbox{
+	min-height:540px;
+	background-color:#2066B2;
+}
+.list{max-width: 104px;}
+.list ul{
+	width:100%;
+}
+.list ul li{
+	background-color:#F86941;
+	width:80%;
+}
+.list ul li img{
+	width:35px;
+}
+.show{
+	display:block;
+}
+.jiao{
+	position:absolute;
+	right: -20px;
+	top:40px;
+}
+.hidden{display:none;}
+.nav > li > a {
+    text-align: center;
+	margin-top:4rem;
+	margin-bottom:1rem;
+	padding:0 !important;
+}
+.nav-tabs > li > a {
+    border:none !important;
+	color:white;
+}
+.nav-tabs > li> a:hover {
+    background-color: #F86941 !important;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+	color:white !important;
+	background-color:#F86941 !important;
+}
+.title{
+	width:80%;
+	text-align:center;
+	color:white;
+	padding-top:3rem;
+	background-color:#F86941;
+}
+.title img{
+	width:30px;
+}
+.nav-tabs{
+	border:none !important;
+}
+#sanjiao{
+	margin-left:70%; margin-top:-5rem;
+	}
+#bottom{
+	margin:12rem auto 2rem auto!important;
+	border:1px solid white;
+	width:80%;
+	border-radius:2rem;
+}
+#bottom div{
+	height:3rem;
+	line-height:3rem;
+	font-size:1rem;
+	color:white;
+	text-align:center;
+	border-right:1px solid white;
+}
+#san{
+	border:none !important;
+}
+#bottom img{
+	padding-right:0.4rem;
+	width:15px;
+}
+#myTabContent{
+	color:white;
+	text-align:center;
+	padding-top:2rem;
+}
+#myTabContent span{
+	font-size:2rem;
+}
+#myTabContent p{
+	text-align:left;
+	margin-left:1rem;
+	margin-right:1rem;
+	margin-top:1rem;
+}
+

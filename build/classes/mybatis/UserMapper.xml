@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.repository.UserDao">
+		<resultMap id="yh" type="BaseUser"></resultMap>
+		
+		<insert id="insert" parameterType="BaseUser">
+    		INSERT INTO `user` (id,`name`,phone,qiye,userfj,loginid) VALUE
+			(#{id},#{name},#{phone},#{qiye},#{userfj},#{loginid});
+    	</insert>
+    	
+	 	<select id="findByPage"  resultMap="yh" parameterType="BaseUser">
+        	SELECT `user`.id,`user`.`name`,`user`.phone,yhhangye.mingcheng AS qiye,`user`.userfj
+			FROM `user`  LEFT JOIN yhhangye
+			ON `user`.qiye=yhhangye.id  
+			ORDER BY `user`.id ASC     	
+        	
+   	    </select> 
+   	    <delete id="delete" parameterType="BaseUser">
+   	    	DELETE FROM `user` WHERE id=#{id};
+   	    </delete>
+   	 	<select id="find" resultMap="yh" resultType="BaseUser">
+       		SELECT t.* FROM `user` t   WHERE id=#{id}; 
+   	    </select>
+   	    <select id="findALL" resultMap="yh" resultType="BaseUser">
+       		SELECT t.* FROM `user` t   WHERE 1=1; 
+   	    </select>
+   	    <select id="updatefj" resultMap="yh" resultType="BaseUser">
+       		UPDATE `user` SET userfj='' WHERE id=#{id}
+   	    </select>
+   	    
+   	    <select id="findtouxiang" resultMap="yh" resultType="BaseUser">
+   	 	<!-- 用户查询用户的信息（头像等） -->
+       		SELECT `user`.userfj FROM login  
+LEFT JOIN `user`
+ON user.name=login.loginid
+   	    </select>
+   	    
+   	    <update id="update" parameterType="BaseUser">
+   	    	UPDATE `user` SET NAME=#{name},phone=#{phone},userfj=#{userfj} where id=#{id};
+   	    </update>
+   	    
+   	    <delete id="deleteBatch" parameterType="java.util.List">
+   	    	DELETE FROM `user` WHERE id
+	   	    	in(
+			<foreach item="item" collection="list" open="" separator="," close="" >
+				#{item.id}
+			</foreach>
+			);
+   	    </delete>
+   	   	<select id="count"  resultType="int" parameterType="BaseUser">
+       		SELECT COUNT(*) FROM `user` WHERE id=#{id}
+    	</select>
+    	
+</mapper>

@@ -1,0 +1,114 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+	background-image:url(../assets/bg1.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+	padding-bottom:20px;
+	}
+.back{
+	background-color: #f86941;
+}
+.img1 img{
+	height:2.4rem;
+	margin-top:10%;
+	margin-bottom:3%;
+}
+.img2 img{
+	height:2.4rem;
+	margin-top:10%;
+	margin-left:70%;
+}
+.zi{
+	text-align:center;
+	font-weight: 600;
+	font-size: 1.4rem;
+	margin-top:3%;
+	margin-bottom:3%;
+	color:#fff;
+}
+/*---------以上是公用的模块--------------------*/
+
+.container>.row>.col>.nav-tabs {
+	border-bottom:none;
+}
+.container>.row>.col>.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover{
+	border: none;
+	color:white;
+	border:1px solid #E44E18;
+	border-radius:20px;
+	background-color:#E44E18;
+	}
+.container>.row>.col>.nav-tabs > li >  a{
+	margin-right: 0px;
+	line-height: 0px;
+    color: #AEAEAE;
+	font-size:1rem;
+}
+.container>.row>.col>.nav-tabs > li{
+	text-align:center;
+	width:20%;
+	line-height:20px;
+	}
+/*--------------重写样式----------------*/
+.top{
+	margin-top:10px;
+	}
+#a5>.row>.col-xs-12{
+	background-image:url(../duotu/Card3.png);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	}
+#a5>.row>.col-xs-12{
+	text-align:center;
+	padding-top:30px;
+	}
+#a5>.row>.col-xs-12 .span1{
+	color:#FFFFFF;
+	font-size:1.6rem;
+	font-weight:600;
+	
+	}
+#a5>.row>.col-xs-12 .span2{
+	color:#FFFFFF;
+	font-size:6rem;
+	font-weight:700;
+	display:inline-block;
+	margin-bottom:50px;
+	}
+#a5>.row>.col-xs-12 .span3{
+	color:#FFFFFF;
+	font-size:1.2rem;
+	font-weight:400;
+	}
+/*--------------bottom------------*/
+
+.zuoyou{
+	background-color:white;
+	margin-left:0px !important;
+	margin-right:0px !important;
+	padding-top:10px;
+	padding-bottom:10px;
+	}
+.img img{
+	width:100%;
+	height:8rem;
+	overflow:hidden;
+	}
+.font{
+	font-size:12px;
+	font-weight:800;
+	margin-bottom:6px;
+	}
+.font1{
+	font-size:10px;
+	color:#939393;
+	margin-bottom:2px;
+	}
+.font2{
+	font-size:12px;
+	font-weight:600;
+	white-space:nowrap;
+	overflow:hidden;
+	}
+

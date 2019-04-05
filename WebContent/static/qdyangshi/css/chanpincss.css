@@ -1,0 +1,136 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-repeat:no-repeat;
+	background-image:url(../assets/bg.png);
+	padding:0px 0px;
+	background-size:100% 100%;
+	background-position:center;
+	}
+.to{
+	width:100%;
+	text-align:center;
+	font-size:1.2rem;
+	font-weight:600;
+	margin-top:50px;
+	}
+.cen{
+	border:1px solid blue;
+	width:80% !important;
+	/**height:100%;*//** 可修改 **/
+	box-shadow:0px 0px  20px #1D4778;
+	margin-top:40px;
+	margin-bottom:80px;
+	background-color:white;
+	}
+.lie{
+	width:80% !important;
+	margin-left:auto !important;
+	margin-right:auto !important;
+	}
+.cen img{
+	margin-top:-4px;
+	}	
+.cen1{
+	color:black;
+	font-size:1.4rem;
+	font-weight:500;
+	display:inline-block;
+	margin-top:40px;
+	}
+.cen2{
+	color:red;
+	font-size:0.6rem;
+	font-weight:500;
+	display:inline-block;
+	margin-top:20px;
+	}
+.cen21{
+	color:red;
+	font-size:0.6rem;
+	font-weight:500;
+	display:inline-block;
+	position:relative;
+	top: -140px;
+	}
+.cen3{
+	width:72%;
+	line-height:50px;
+	padding-left:20px;
+	border-radius:10px;
+	}
+.cen4{
+	width:72%;
+	border-radius:10px;
+	margin-top:20px;
+	padding-left:20px;
+	padding-top:20px;
+	}
+.last{
+	margin-top: 26px;
+	margin-right: 4%;
+	}
+.del_btn{
+	 position: relative;
+	 top: -20px;
+	 left: -60px;
+	}
+.mainPic{
+	position:relative;
+	left: 90px;
+	top: -52px;
+	}
+.last1{
+	width:60px;
+	height:60px;
+	border:2px #AEAEAE dashed;
+	border-radius:10px;
+	}
+.last1 img{
+	margin-left: -4px;
+	}	
+.last1 span{
+	display:inline-block;
+	color:#2760A1;
+	position:relative;
+	top:-22px;
+	font-size: 0.8rem;
+	}
+.last2{
+	background-color:#D8D8D8;
+	margin-right: -12px;
+	}
+.last2 img{
+	margin-left:-10px;
+	margin-top:-8px;
+	}
+.last2 span{
+	width:58px;
+	height:24px;
+	text-align:center;
+	background-color:#2760A1;
+	color:white;
+	border-radius:0px 0px 10px 10px;
+	display:inline-block;
+	border:1px solid black;
+	margin-left:-2px;
+	position:relative;
+	top:28px;
+	}
+.last3 button{
+	width:60%;
+	height:60px;
+	background-color:#2864A7;
+	color:white;
+	font-size:0.8rem;
+	font-weight:500;
+	margin-left:-10px;
+	margin-top:30px;
+	margin-bottom:30px;
+	}
+.last4{
+	background-color:#F86941 !important;
+	position:relative;
+	left: 110px;
+	top: -120px;
+	}

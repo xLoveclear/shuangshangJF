@@ -1,0 +1,157 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+	background-image:url(../assets/bg1.png);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	}
+.back{
+	background-color:#306AAE;
+}
+.wid{
+	padding:10px 0px;
+	}
+.img1 img{
+	height:2.8rem;
+}
+.img2 img{
+	height:2.4rem;
+	margin-top:10%;
+	margin-left:70%;
+}
+.zi{
+	text-align:center;
+	font-weight: 600;
+	font-size: 1.6rem;
+	color:white;
+	line-height: 28px;
+}
+/*---------以上是公用部分--------------------*/
+
+.container>.row>.col>.nav-tabs {
+	border-bottom:none;
+}
+.container>.row>.col>.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover{
+	border: none;
+	color:white;
+	border:1px solid #306AAE;
+	border-radius:20px;
+	background-color:#306AAE;
+	}
+.container>.row>.col>.nav-tabs > li >  a{
+	margin-right: 0px;
+	line-height: 0px;
+    color: #AEAEAE;
+	font-size: 0.9rem;
+}
+.container>.row>.col>.nav-tabs > li{
+	text-align:center;
+	width:20%;
+	line-height:20px;
+	position: relative;
+	left: 30%;
+	}
+/*--------------閲嶅啓鏍峰紡----------------*/
+.top{
+	margin-top:10px;
+	margin-bottom:10px;
+	}
+#a5>.row>.col-xs-12{
+	
+	}
+#a5>.row>.col-xs-12{
+	text-align:center;
+	padding-top:30px;
+	}
+#a5>.row>.col-xs-12 .span1{
+	color:#FFFFFF;
+	font-size:1.6rem;
+	font-weight:600;
+	
+	}
+#a5>.row>.col-xs-12 .span2{
+	color:#FFFFFF;
+	font-size:6rem;
+	font-weight:700;
+	display:inline-block;
+	margin-bottom:50px;
+	}
+#a5>.row>.col-xs-12 .span3{
+	color:#FFFFFF;
+	font-size:1.2rem;
+	font-weight:400;
+	}
+/*--------------bottom------------*/
+
+.zuoyou{
+	background-color:white;
+	margin-left:0px !important;
+	margin-right:0px !important;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-bottom:10px;
+	}
+.img img{
+	width:100%;
+	height:8rem;
+	overflow:hidden;
+	}
+.font{
+	font-size:12px;
+	font-weight:800;
+	margin-bottom:6px;
+	}
+.font1{
+	font-size:10px;
+	color:#939393;
+	margin-bottom:2px;
+	}
+.font2{
+	font-size:12px;
+	font-weight:600;
+	white-space:nowrap;
+	overflow:hidden;
+	}
+
+/*------------下面是幻灯片css--------------*/
+.carousel-indicators{
+    position: absolute !important;
+    bottom:10px !important;
+    left: 3% !important;
+    z-index: 15 !important;
+    width: 100% !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    text-align: left !important;
+    list-style: none !important;
+
+}
+.carousel-indicators .active{
+    width: 20px !important;
+    height: 5px !important;
+    margin: 0 !important;
+    background-color: #f86941 !important;
+}
+.carousel-indicators li{
+    display: inline-block !important;
+    width: 20px !important;
+    height: 4px !important;
+    margin: 0 !important;
+    text-indent: -999px !important;
+    cursor: pointer !important;
+    background-color: #fff !important;
+    border: 0px solid #fff !important;
+    border-radius: 0px !important;
+}
+.carousel-caption {
+    position: absolute !important;
+    right: 2% !important;
+    bottom: 5px !important;
+    left: 2%  !important;
+    z-index: 10 !important;
+    padding-top: 0px !important;
+	padding-bottom: 0px !important;
+    color: #fff !important;
+    text-align: left !important;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6) !important;
+}

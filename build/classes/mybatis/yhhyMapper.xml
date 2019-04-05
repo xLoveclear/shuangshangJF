@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.repository.yhhangyeDao">
+		<resultMap id="yh" type="BaseYhhangye"></resultMap>
+		
+		<insert id="insert" parameterType="BaseYhhangye">
+    		INSERT INTO yhhangye (id,mingcheng,zhuangtai,shangji) VALUE 
+    		(#{id},#{mingcheng},#{zhuangtai},#{shangji});
+    	</insert>
+    	
+	 	<select id="findByPage"  resultMap="yh" parameterType="BaseYhhangye">
+       		SELECT t.* FROM yhhangye t WHERE 1=1
+        	ORDER BY t.id ASC
+   	    </select> 
+   	    <delete id="delete" parameterType="BaseYhhangye">
+   	    	DELETE FROM yhhangye WHERE id=#{id};
+   	    </delete>
+   	 	<select id="find" resultMap="yh" resultType="BaseYhhangye">
+       		SELECT t.* FROM yhhangye t WHERE id=#{id}
+   	    </select>
+   	    <update id="update" parameterType="BaseYhhangye">
+   	    	UPDATE yhhangye SET mingcheng=#{mingcheng},shangji=#{shangji} where id=#{id};
+   	    </update>
+   	    <delete id="deleteBatch" parameterType="java.util.List">
+   	    	DELETE FROM yhhangye WHERE id
+	   	    	in(
+			<foreach item="item" collection="list" open="" separator="," close="" >
+				#{item.id}
+			</foreach>
+			);
+   	    </delete>
+   	    
+   	    <!--<select id="count"  resultType="int" parameterType="Student">
+       		SELECT count(*) FROM student t WHERE 1=1 
+    	</select> -->
+    	
+    	
+</mapper>

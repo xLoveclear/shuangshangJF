@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.repository.LoginDao">
+		<resultMap id="yh" type="BaseLogin"></resultMap>
+		
+		<insert id="insert" parameterType="BaseLogin">
+    		INSERT INTO login (id,loginid,pass,jami,email) VALUE
+			(#{id},#{loginid},#{pass},#{jami},#{email});
+    	</insert>
+    	
+	 	<select id="findByPage"  resultMap="yh" parameterType="BaseLogin">
+        	SELECT `user`.id,`user`.`name`,`user`.phone,yhhangye.mingcheng AS qiye,`user`.userfj
+			FROM `user`  LEFT JOIN yhhangye
+			ON `user`.qiye=yhhangye.id  
+			ORDER BY `user`.id ASC     	
+        	
+   	    </select> 
+   	    
+   	 	<select id="find" resultMap="yh" resultType="BaseLogin">
+   	 	<!-- 用户查询用户的信息（头像等） -->
+       		SELECT `user`.userfj,login.loginid FROM login  
+LEFT JOIN `user`
+ON user.loginid=login.loginid
+WHERE login.loginid=#{loginid} AND login.pass=#{pass}
+   	    </select>
+   	    <select id="findALL" resultMap="yh" resultType="BaseLogin">
+       		SELECT t.* FROM `user` t   WHERE 1=1; 
+   	    </select>
+   	    <select id="findlogin" resultMap="yh" resultType="BaseLogin">
+       		SELECT t.* FROM `user` t   WHERE id=#{id} AND phone=#{phone}; 
+   	    </select>
+   	    <update id="update" parameterType="BaseLogin">
+   	    	UPDATE `user` SET NAME=#{name},phone=#{phone},userfj=#{userfj} where id=#{id};
+   	    </update>
+   	    
+   	    <delete id="deleteBatch" parameterType="java.util.List">
+   	    	DELETE FROM `user` WHERE id
+	   	    	in(
+			<foreach item="item" collection="list" open="" separator="," close="" >
+				#{item.id}
+			</foreach>
+			);
+   	    </delete>
+   	   	<select id="count"  resultType="int" parameterType="BaseLogin">
+   	   		
+       		SELECT COUNT(*) FROM login WHERE loginid=#{loginid} AND pass=#{pass}	
+    		
+    	</select>
+    	
+</mapper>

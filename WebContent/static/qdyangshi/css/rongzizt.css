@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.back{
+	background-color: #f86941;
+}
+.shang{
+	margin-top: 5%;
+}
+.img1 img{
+	height:2.4rem;
+	margin-top:10%;
+	margin-bottom:3%;
+}
+.img2 img{
+	height:2.4rem;
+	margin-top:10%;
+	margin-left:70%;
+}
+.zi{
+	text-align:center;
+	font-weight: 600;
+	font-size: 1.6rem;
+	margin-top:3%;
+	margin-bottom:3%;
+	color:#fff;
+}
+.row-right>.col-xs-12{
+	background-color: #f86941;
+	color:#fff;
+	height: 5rem;
+	line-height: 5rem;
+	text-align: center;
+	border-bottom:1px solid #fff;
+	font-family: PingFangSC-Semibold;
+	font-size: 14px;
+	letter-spacing: 0;
+}
+.change{
+	background-color: #3469ab !important;
+}
+.font-color{
+	font-family: PingFangSC-Semibold;
+	font-size: 10px;
+	letter-spacing: 0;
+	overflow:hidden; 
+	white-space:nowrap; 
+	text-overflow:ellipsis;
+	margin-top:6px;
+}
+.row-left{
+	padding-left:15px;
+	box-shadow:0px 0px 2px #E7E7E7;
+	margin-right: 0px !important;
+	margin-left: 10px !important;
+	margin-bottom: 20px;
+}
+.row-left>.zuoshang{
+	/*height: 9rem;*/
+	padding-right: 0;
+	padding-left: 0;
+}
+.row-left>.zuoshang>div{
+	width: 100%;
+	overflow:hidden; 
+	white-space:nowrap; 
+	text-overflow:ellipsis;
+}
+.row-left>.zuoshang_left{
+	color: #fff;
+	background-color: #3469ab;
+	border-radius: 6px;
+	margin-left: -26px;
+	margin-right: 10px;
+}
+.row-left>.zuoshang_left>.cp_m{
+	text-align: left;
+	font-size: 18px;
+	font-weight: 700;
+	height: 3.5rem;
+	line-height: 3.5rem;
+	padding-left: 0.6rem;
+}
+.row-left>.zuoshang_left>.cp_t{
+	text-align: right;
+	font-size: 12px;
+	font-weight: 500;
+	height: 3.5rem;
+	line-height: 3.5rem;
+	padding-right: 0.6rem;
+}
+.row-left>.youshang{
+	padding-left: 0.5rem;
+}
+.zuoshang>.font_c_o{
+	height: 2.4rem;
+	line-height: 2.4rem;
+	font-size: 10px;
+	padding-right: 0.8rem;
+}
+.font_c_o{
+	color: #737891;
+}

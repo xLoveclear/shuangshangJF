@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.repository.StudentListDao">
+		<resultMap id="student" type="baseStudent"></resultMap>
+		
+		
+	<!-- 	<select id="findByPage"  resultMap="stu" parameterType="Student">
+       		SELECT t.* FROM student t WHERE 1=1
+        	ORDER BY t.id
+   	    </select> 
+   	     -->
+   	    <select id="find" resultMap="student" resultType="baseStudent">
+       		SELECT t.* FROM student t WHERE 1=1
+   	    </select>
+   	    <!--<select id="count"  resultType="int" parameterType="Student">
+       		SELECT count(*) FROM student t WHERE 1=1 
+    	</select> -->
+    	<insert id="insert" parameterType="baseStudent">
+    		INSERT INTO student (id,`name`,sex) VALUE (#{id},#{name},#{sex});
+    	</insert>
+</mapper>

@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.back{
+	background-color: #f86941;
+}
+.img1 img{
+	height:2.4rem;
+	margin-top:10%;
+	margin-bottom:3%;
+}
+.img2 img{
+	height:2.4rem;
+	margin-top:10%;
+	margin-left:70%;
+}
+.zi{
+	text-align:center;
+	font-weight: 600;
+	font-size: 1.6rem;
+	margin-top:3%;
+	margin-bottom:3%;
+	color:#fff;
+}
+/*---------以上是公用的模块--------------------*/
+.bk{
+	background-image:url(../assets/Imagess.png);
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	padding-top:100px;
+	}
+.bk1{
+	background-image:url(../assets/aee.png);
+	}
+.bk h4{
+	color:#FFFFFF;
+	font-weight:600;
+	}
+.bk span{
+	color:#FFFFFF;
+	font-size:1.4rem;
+	overflow:hidden;
+	display:inline-block;
+	font-weight:600;
+	text-align:left;
+	width:48%;
+	}
+.bk .span1{
+	width:20%;
+	text-align:center;
+	background-color:#E7CE97;
+	line-height:20px;
+	}
+.bk1 .span1{
+	width:20%;
+	text-align:center;
+	background-color:#41ACD5;
+	line-height:20px;
+	}
+.bk p{
+	color:#FFFFFF;
+	font-size:1.4rem;
+	overflow:hidden;
+	display:inline-block;
+	font-weight:600;
+	text-align:left;
+	}
+

@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+	background-image:url(../assets/bg2.png);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	padding-bottom:20px;
+	}
+.back{
+	background-color: none;
+}
+.img1 img{
+	height:2rem;
+	margin:16px 0px;
+}
+.img2 img{
+	height:2.4rem;
+	margin-top:10%;
+	margin-left:70%;
+}
+.zi{
+	text-align:center;
+	font-weight: 600;
+	font-size: 1.4rem;
+	margin-top:3%;
+	margin-bottom:3%;
+	color:black;
+}
+/*---------以上是公用的模块--------------------*/
+.zuoyou{
+	margin-left:15px !important;
+	margin-right:15px !important;
+	box-shadow:0px 0px 15px black;
+	}
+.bg1{
+	background-image:url(../assets/Image.png);
+	text-align:center;
+	padding-top:100px;
+	padding-bottom:60px;
+	}
+.bg2{
+	background-image:url(../assets/Imagess.png);
+	}
+.bg1 img{
+	height:6rem;
+	}
+.div{
+	width:90%;
+	height:60px;
+	margin:30px auto 0px auto;
+	border:3px solid #F86941;
+	padding-top:10px;
+	}
+.div span{
+	display:inline-block;
+	color: white;
+	font-size: 2.4rem;
+	font-weight:800;
+	border-bottom:3px solid #F86941;
+	}
